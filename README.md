@@ -15,7 +15,7 @@ Which compresses the passed hash to a value between 0 and N-1, to be mapped onto
 
 `(((scale*hash + shift) % prime) % N);`
 
-with scale, shift being random integers, prime being a prime number, in this case calculated by `prime = 2^(rand()%10) - 1;`. At special occasions, primes generated this way can lead to collusion patterns, so the solution is not optimal.
+with scale, shift being random integers, prime being a prime number, in this case calculated by `prime = 2^(rand()%10) - 1;`. At special occasions, primes generated this way can lead to collusion patterns, so the solution is not optimal. N is the intended table size.
 
 
 
